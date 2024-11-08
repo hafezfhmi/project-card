@@ -6,7 +6,11 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.ts",
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "lint": "eslint --fix",
+    "prettier": "prettier . --write --ignore-unknown",
+    "lint-staged:lint": "eslint --fix",
+    "lint-staged:prettier": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

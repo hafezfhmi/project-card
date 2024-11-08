@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier . --write --ignore-unknown",
+    "lint-staged:lint": "eslint --fix",
+    "lint-staged:prettier": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "next": "15.0.2",
