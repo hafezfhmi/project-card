@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier . --write --ignore-unknown",
+    "lint-staged:lint": "eslint --fix",
+    "lint-staged:prettier": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "next": "15.0.2",
@@ -22,6 +25,7 @@
     "eslint": "^9.14.0",
     "eslint-config-next": "15.0.2",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
     "postcss": "^8",
     "prettier": "3.3.3",
     "tailwindcss": "^3.4.1",
